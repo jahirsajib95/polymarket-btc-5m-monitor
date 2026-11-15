@@ -1,0 +1,72 @@
+Polymarket resolved windows: 91036
+  2025-12-18 04:25 -> 2026-11-15 13:25 UTC
+  contiguous segments: 19  (longest 17994 windows = 62.5 days)
+
+Agreement PM settlement vs Binance candle colour: 85251/91025 = 93.66% (95% CI 93.50%-93.81%)
+  -> they disagree on 5774 windows, 6.34% of the time
+  PM up-share 50.07% | Binance up-share 50.15%
+
+  by month (agreement):
+    2025-12: 95.84%  (n=3962)
+    2026-01: 96.30%  (n=7469)
+    2026-02: 97.53%  (n=4889)
+    2026-03: 96.88%  (n=8928)
+    2026-04: 96.84%  (n=8636)
+    2026-05: 96.07%  (n=8927)
+    2026-06: 97.27%  (n=8634)
+    2026-07: 96.24%  (n=8927)
+    2026-08: 90.49%  (n=8928)
+    2026-09: 86.49%  (n=8639)
+    2026-10: 86.20%  (n=8928)
+    2026-11: 88.24%  (n=4158)
+
+======================================================================
+7-STREAK TEST
+======================================================================
+
+[1] on POLYMARKET final outcomes (the settlements that matter)
+  ALL Polymarket windows
+    candles=91036  runs>=7: 642  longest run=15
+    #8 win  54.05%  (95% CI 50.18%-57.87%)   n=642
+    #9 win  53.12%  (95% CI 49.25%-56.95%)
+    both win 28.04% | exactly one 51.09% | both lose 20.87%
+    no opposite within 4: 39/642 = 6.07%   within 5: 22/642 = 3.43%
+
+[2] same windows, using BINANCE candle colours
+  Binance colour on the same windows
+    candles=91025  runs>=7: 610  longest run=15
+    #8 win  56.39%  (95% CI 52.43%-60.28%)   n=610
+    #9 win  53.77%  (95% CI 49.80%-57.69%)
+    both win 29.18% | exactly one 51.80% | both lose 19.02%
+    no opposite within 4: 32/610 = 5.25%   within 5: 15/610 = 2.46%
+
+[3] by settlement regime (PM)
+
+  single print (<2026-08-07)
+    candles=62100  runs>=7: 423  longest run=15
+    #8 win  55.79%  (95% CI 51.03%-60.45%)   n=423
+    #9 win  51.30%  (95% CI 46.55%-56.03%)
+    both win 27.90% | exactly one 51.30% | both lose 20.80%
+    no opposite within 4: 24/423 = 5.67%   within 5: 14/423 = 3.31%
+
+  30s TWAP (08-07..08-14)
+    candles=2016  runs>=7: 20  longest run=13
+    #8 win  45.00%  (95% CI 25.82%-65.79%)   n=20
+    #9 win  50.00%  (95% CI 29.93%-70.07%)
+    both win 25.00% | exactly one 45.00% | both lose 30.00%
+    no opposite within 4: 3/20 = 15.00%   within 5: 2/20 = 10.00%
+
+  60s TWAP (>=2026-08-14)
+    candles=26920  runs>=7: 199  longest run=13
+    #8 win  51.26%  (95% CI 44.35%-58.11%)   n=199
+    #9 win  57.29%  (95% CI 50.34%-63.96%)
+    both win 28.64% | exactly one 51.26% | both lose 20.10%
+    no opposite within 4: 12/199 = 6.03%   within 5: 6/199 = 3.02%
+
+======================================================================
+what the numbers mean at the ask
+======================================================================
+  fill 0.50 -> breakeven hit rate 51.75%  | PM #8 = 54.05%  (EDGE)
+  fill 0.51 -> breakeven hit rate 52.75%  | PM #8 = 54.05%  (EDGE)
+  fill 0.52 -> breakeven hit rate 53.75%  | PM #8 = 54.05%  (EDGE)
+  fill 0.53 -> breakeven hit rate 54.74%  | PM #8 = 54.05%  (NO EDGE)

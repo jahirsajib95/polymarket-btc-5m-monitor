@@ -1,0 +1,16 @@
+# Data caches: re-downloadable, ~41 MB. streak_report.py rebuilds them.
+btcusdt_5m.json
+btcusdt_15m.json
+btcusdt_1h.json
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local / editor
+.env
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
